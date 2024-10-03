@@ -2,7 +2,7 @@
 mkdir -p /home/dump
 cd /home/dump
 
-cp -r /home/* /home/dump/
+cp /etc/passwd /home/dump/
 
 zip -r dump.zip dump/
 
