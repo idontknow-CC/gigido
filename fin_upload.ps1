@@ -1,11 +1,4 @@
-#                      _                        
-#  _   _  ___  _   _  | | ___ __   _____      __
-# | | | |/ _ \| | | | | |/ /  _ \ / _ \ \ /\ / /
-# | |_| | (_) | |_| |_|   <| | | | (_) \ V  V / 
-#  \__, |\___/ \__,_(_)_|\_\_| |_|\___/ \_/\_/  
-#  |___/                                        
 Set-Location C:\Users\Public\Documents #Go to public documents location
-#Delete all files downloaded before
 Remove-Item -r dump/
 Remove-Item dump.zip
 Remove-Item fin_upload.ps1
